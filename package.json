@@ -1,0 +1,27 @@
+{
+  "name": "cypress-drupal-forms",
+  "version": "0.0.0",
+  "description": "Class that helps to write tests",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hinternet/drupal-cypress.git"
+  },
+  "keywords": [
+    "Drupal",
+    "Cypress"
+  ],
+  "author": "Oskar Calvo",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/hinternet/drupal-cypress/issues"
+  },
+  "homepage": "https://github.com/hinternet/drupal-cypress#readme",
+  "dependencies": {
+    "cypress": "^10.3.0",
+    "cypress-file-upload": "^5.0.8"
+  }
+}
