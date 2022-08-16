@@ -1,6 +1,6 @@
 {
   "name": "cypress-drupal-forms",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Class that helps to write tests",
   "main": "src/index.js",
   "scripts": {
