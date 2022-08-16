@@ -47,7 +47,9 @@ export default class ArticlePage {
 }
 ```
 
-Use the files in step_definitions files:
+Use the files in 'step_definitions' files or in '**/*.spec.js'
+
+
 ```javascript
 // Cypress/support/step_definitions/articlePage.js
 import { Given, When, Then } from 'cypress-cucumber-preprocessor/steps';
@@ -135,4 +137,10 @@ This module needs three env variables:
 ```
 * Property: this is default drupal data selector.
 * MediaFieldSelector: this is the css elementors needed to avoid hava a long string of html elements selector to updolad files throught media browser.
-* Options: This is an object needt to set to values if the widget is or not ckeditor, and if delta of the elemnt, in some themes drupal has diferents buttons and we see one or another depending of the size of screens.
+* Options: This is an object needed to set the widget to user:
+  * ckeditor: this widget option is used in TextField and TextAreaField fields and let to fill those fields without ckeditor.
+  * noCkeditor: this widget option is used in TextField and TextAreaField fields and let to fill those fields that used a ckeditor.
+  * checkBoxes: this widget option is used in TaxonomyReference field when the form element is defined as a check Boxes.
+  * radioButton: this widget option is used in TaxonomyReference field when the form element is defined as a radioButton.
+  * select: this widget option is used in TaxonomyReference field when the form element is defined as a select list.
+  * autocomplete: this widget option is used in TaxonomyReference field when the form element is defined as a autocomplete.
